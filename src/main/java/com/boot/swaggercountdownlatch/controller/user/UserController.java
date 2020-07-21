@@ -125,4 +125,10 @@ public class UserController {
         log.info("如果你不想写 @ApiImplicitParam 那么 swagger 也会使用默认的参数名作为描述信息 ");
     }
 
+    @PutMapping("/{id}")
+    @ApiOperation(value = "修改数据（DONE）")
+    public void addUser(@PathVariable Long id, @RequestBody User user) {
+        log.info("如果你不想写 @ApiImplicitParam 那么 swagger 也会使用默认的参数名作为描述信息 ");
+    }
+
 }
